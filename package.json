@@ -1,0 +1,13 @@
+{
+  "name": "pages",
+  "private": true,
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "dev": "slidev",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.15.2",
+    "playwright-chromium": "^1.61.1"
+  }
+}

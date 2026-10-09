@@ -1,0 +1,148 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram id="ai-gent-flow" name="AI 채팅 vs AI Agent">
+    <mxGraphModel dx="706" dy="632" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="divider" value="" style="endArrow=none;html=1;dashed=1;dashPattern=2 4;strokeColor=#16161a;opacity=40;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="60" as="sourcePoint" />
+            <mxPoint x="800" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ltitle" value="AI 채팅 서비스" style="text;html=1;align=left;verticalAlign=middle;fontSize=32;fontStyle=1;fontColor=#16161a;fontFamily=Noto Serif CJK KR;" parent="1" vertex="1">
+          <mxGeometry x="70" y="40" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lunder" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#c8421f;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="95" width="70" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="lllm" value="✦ LLM Model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fbf6e8;strokeColor=#16161a;strokeWidth=2;dashed=1;fontSize=16;shadow=1;fontFamily=Courier New;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="500" y="135" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lperson" value="사람" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f1ece1;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;shadow=1;fontFamily=Noto Serif CJK KR;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="80" y="225" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lai" value="AI 채팅" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#16161a;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;fontColor=#f1ece1;shadow=1;fontFamily=Noto Serif CJK KR;" parent="1" vertex="1">
+          <mxGeometry x="480" y="225" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="larr_q" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lperson" target="lai" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="llbl_q" value="① 질문" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f1ece1;strokeColor=#16161a;strokeWidth=1;fontSize=14;fontFamily=Noto Sans CJK KR;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="305" y="238" width="80" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lstep1" value="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8421f;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="263" y="237" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="larr_resp" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="320" as="sourcePoint" />
+            <mxPoint x="265" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llbl_r" value="② 응답" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f1ece1;strokeColor=#16161a;strokeWidth=1;fontSize=14;fontFamily=Noto Sans CJK KR;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="305" y="308" width="80" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lstep2" value="2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8421f;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="447" y="307" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="larr_llm_up" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=1.5;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="lai" target="lllm" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="larr_llm_down" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=1.5;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lllm" target="lai" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lcopy" value="사람이 응답을 복사 ·&#xa;붙여넣어 작업물에 반영" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fbeae5;strokeColor=#c8421f;strokeWidth=2;dashed=1;fontSize=18;fontStyle=1;fontFamily=Noto Serif CJK KR;fontColor=#c8421f;" parent="1" vertex="1">
+          <mxGeometry x="80" y="380" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="larr_copy" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#c8421f;strokeWidth=2.2;dashed=1;dashPattern=8 6;curved=1;exitX=0.4;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lcopy" target="lfile" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lstep3" value="3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c8421f;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="630" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="lfile" value="작업물 / 대상 파일" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;shadow=1;fontFamily=Noto Serif CJK KR;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="280" y="690" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rtitle" value="AI Agent" style="text;html=1;align=left;verticalAlign=middle;fontSize=32;fontStyle=1;fontColor=#16161a;fontFamily=Noto Serif CJK KR;" parent="1" vertex="1">
+          <mxGeometry x="850" y="40" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="runder" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1d4d3a;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="850" y="95" width="70" height="4" as="geometry" />
+        </mxCell>
+        <mxCell id="rllm" value="✦ LLM Model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fbf6e8;strokeColor=#16161a;strokeWidth=2;dashed=1;fontSize=16;shadow=1;fontFamily=Courier New;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="135" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rperson" value="사람" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f1ece1;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;shadow=1;fontFamily=Noto Serif CJK KR;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="860" y="225" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rai" value="AI Agent" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#16161a;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;fontColor=#f1ece1;shadow=1;fontFamily=Noto Serif CJK KR;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="225" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rarr_q" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rperson" target="rai" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rlbl_q" value="작업 지시" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fbf6e8;strokeColor=#16161a;strokeWidth=1;fontSize=14;fontFamily=Noto Sans CJK KR;fontColor=#16161a;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="238" width="110" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="rstep1" value="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1d4d3a;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="1070" y="237" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rarr_llm_up" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=1.5;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rai" target="rllm" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rarr_llm_down" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#16161a;strokeWidth=1.5;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rllm" target="rai" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rspec" value="작업 계획서&lt;br&gt;&lt;br&gt;AI가 초안 작성 →&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(22, 22, 26), rgb(218, 218, 221));&quot;&gt;사람이 보완 명령&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(22, 22, 26), rgb(218, 218, 221));&quot;&gt;또는&amp;nbsp; 직접 수정&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fbf6e8;strokeColor=#16161a;strokeWidth=2;fontSize=16;fontStyle=0;shadow=1;fontFamily=Noto Sans CJK KR;fontColor=#16161a;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="395" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rstep2" value="3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1d4d3a;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="1015" y="331" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="rarr_ai_spec" value="" style="endArrow=classic;html=1;curved=1;rounded=0;strokeColor=#16161a;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.85;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rai" target="rspec" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rarr_p_spec" value="" style="endArrow=classic;html=1;curved=1;rounded=0;strokeColor=#16161a;strokeWidth=1.6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.15;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rperson" target="rspec" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rmachine" value="내 컴퓨터" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eee7d3;strokeColor=#16161a;strokeWidth=2;fontSize=16;fontStyle=1;fontFamily=Noto Serif CJK KR;fontColor=#1d4d3a;align=left;verticalAlign=top;spacingLeft=18;spacingTop=8;" parent="1" vertex="1">
+          <mxGeometry x="830" y="585" width="730" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="rfile1" value="파일 생성 / 수정" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;shadow=1;fontFamily=Noto Serif CJK KR;fontColor=#16161a;align=left;verticalAlign=top;spacingLeft=16;spacingTop=14;" parent="1" vertex="1">
+          <mxGeometry x="880" y="650" width="320" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="rfile2" value="외부 사이트 연동 호출" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#16161a;strokeWidth=2;fontSize=20;fontStyle=1;shadow=1;fontFamily=Noto Serif CJK KR;fontColor=#16161a;align=left;verticalAlign=top;spacingLeft=16;spacingTop=14;" parent="1" vertex="1">
+          <mxGeometry x="1220" y="650" width="320" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Ddqp4eOJgPsOb-64cFaR-1" value="2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1d4d3a;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1334" y="322" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Ddqp4eOJgPsOb-64cFaR-2" value="4" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1d4d3a;strokeColor=#16161a;strokeWidth=2;fontColor=#f1ece1;fontStyle=1;fontSize=14;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1441" y="370" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="Ddqp4eOJgPsOb-64cFaR-4" value="" style="endArrow=classic;html=1;curved=1;rounded=0;strokeColor=#16161a;strokeWidth=1.6;exitX=0.864;exitY=1.07;exitDx=0;exitDy=0;entryX=0.874;entryY=-0.009;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="rai" target="rmachine">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1493" y="435" />
+            </Array>
+            <mxPoint x="1493" y="360" as="sourcePoint" />
+            <mxPoint x="1458" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

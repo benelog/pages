@@ -1,0 +1,18 @@
+{
+  "name": "slidev-theme-green",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "slidev": ">=52.0.0"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "canvasWidth": 1280,
+      "lineNumbers": false,
+      "routerMode": "hash",
+      "record": true
+    }
+  }
+}
