@@ -1,0 +1,25 @@
+buildscript {
+  repositories {
+      jcenter()
+  }
+
+  dependencies {
+    classpath 'org.ajoberstar:gradle-git:0.6.3'     
+  }
+}
+
+apply plugin: 'jetty'
+jettyRun {
+  webAppSourceDirectory = file("content")
+  contextPath = ""
+}
+
+apply plugin: 'github-pages'                        
+githubPages {
+  repoUri = 'git@github.com:benelog/docs.git'
+  pages {
+     from(file('content')) {
+     	into '.'
+     }
+  }
+}

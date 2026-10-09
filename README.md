@@ -9,11 +9,14 @@
 | 날짜 | 제목 | 종류 | 소스 | 보기 |
 |------|------|------|------|------|
 | 2026-04-26 | AI agent에게 개인적인 일 시키기 | 발표 자료 (대학 동창 모임) | [`20260426-ai-gent/slides.md`](20260426-ai-gent/slides.md) | [HTML](https://pages.benelog.net/20260426-ai-gent/) · [PDF](https://pages.benelog.net/20260426-ai-gent/slides.pdf) |
+| 2014-07-05 | 파워포인트 떠나기 | 발표 자료 (개인 연구 자료) | [`20140705-goodbye-powerpoint/slides.md`](20140705-goodbye-powerpoint/slides.md) | [HTML](https://pages.benelog.net/20140705-goodbye-powerpoint/) · [PDF](https://pages.benelog.net/20140705-goodbye-powerpoint/slides.pdf) |
 | 2007-04-28 | 상혁과 나영의 결혼식 초대장 | 청첩장 | [`20070428-wedding/`](20070428-wedding/) | [HTML](https://pages.benelog.net/20070428-wedding/) |
 | 1995-11-14 | 이제 윈도우 시대? | 학교 교지 기고문 | [`19951114-windows-era/`](19951114-windows-era/) | [HTML](https://pages.benelog.net/19951114-windows-era/) |
 
-- `20260426-ai-gent/` 는 [presentations](https://github.com/benelog/presentations) 저장소에서 옮겨 왔다.
+- `20260426-ai-gent/`, `20140705-goodbye-powerpoint/` 는 [presentations](https://github.com/benelog/presentations) 저장소에서 옮겨 왔다.
   같은 [Slidev](https://sli.dev/) 마크다운이고, 테마 `themes/green/` 도 그 저장소에서 복사했다.
+  `originals/20140705-goodbye-powerpoint/` 는 Slidev 로 옮기기 전의 reveal.js 원본과 그 발표가 설명하는
+  빌드 스크립트(`build.gradle`, `start-py.sh` 등)다. 숫자로 시작하지 않아 빌드 대상에서 빠진다.
 - `20070428-wedding/` 은 Dropbox `public-archive/wedding` 에서 옮겨 왔다.
 - `19951114-windows-era/` 는 old-com 저장소(옛 PC 의 C: 드라이브)에 남은 아래아한글 3.0 문서 `HWP21/WIN.HWP` 를
   `scripts/win-hwp2html.py` 로 옮긴 것이다. 문서에 저장된 용지·여백·줄 나눔·쪽 나눔·그림 위치를 그대로 써서
