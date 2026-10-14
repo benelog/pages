@@ -8,6 +8,7 @@
 
 | 날짜 | 제목 | 종류 | 소스 | 보기 |
 |------|------|------|------|------|
+| 2026-10-15 | 페이스북 글로 본 정상혁 | 분석 (Claude Code가 페이스북 글 약 600개를 읽고 씀) | [`20261015-facebook-analysis/`](20261015-facebook-analysis/) | [HTML](https://pages.benelog.net/20261015-facebook-analysis/) |
 | 2026-04-26 | AI agent에게 개인적인 일 시키기 | 발표 자료 (대학 동창 모임) | [`20260426-ai-gent/slides.md`](20260426-ai-gent/slides.md) | [HTML](https://pages.benelog.net/20260426-ai-gent/) · [PDF](https://pages.benelog.net/20260426-ai-gent/slides.pdf) |
 | 2014-07-05 | 파워포인트 떠나기 | 발표 자료 (개인 연구 자료) | [`20140705-goodbye-powerpoint/slides.md`](20140705-goodbye-powerpoint/slides.md) | [HTML](https://pages.benelog.net/20140705-goodbye-powerpoint/) · [PDF](https://pages.benelog.net/20140705-goodbye-powerpoint/slides.pdf) |
 | 2007-04-28 | 상혁과 나영의 결혼식 초대장 | 청첩장 | [`20070428-wedding/`](20070428-wedding/) | [HTML](https://pages.benelog.net/20070428-wedding/) |
