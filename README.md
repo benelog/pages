@@ -8,7 +8,7 @@
 
 | 날짜 | 제목 | 종류 | 소스 | 보기 |
 |------|------|------|------|------|
-| 2026-10-15 | 페이스북 글로 본 정상혁 | 분석 (Claude Code가 페이스북 글 약 600개를 읽고 씀) | [`20261015-facebook-analysis/`](20261015-facebook-analysis/) | [HTML](https://pages.benelog.net/20261015-facebook-analysis/) |
+| 2026-10-18 | 미투데이와 페이스북으로 본 정상혁 | 분석 (Claude Code가 미투데이 글 1,210개와 페이스북 전체 공개 글 1,694개를 읽고 씀) | [`20261018-social-media-analysis/`](20261018-social-media-analysis/) | [HTML](https://pages.benelog.net/20261018-social-media-analysis/) |
 | 2026-04-26 | AI agent에게 개인적인 일 시키기 | 발표 자료 (대학 동창 모임) | [`20260426-ai-gent/slides.md`](20260426-ai-gent/slides.md) | [HTML](https://pages.benelog.net/20260426-ai-gent/) · [PDF](https://pages.benelog.net/20260426-ai-gent/slides.pdf) |
 | 2014-07-05 | 파워포인트 떠나기 | 발표 자료 (개인 연구 자료) | [`20140705-goodbye-powerpoint/slides.md`](20140705-goodbye-powerpoint/slides.md) | [HTML](https://pages.benelog.net/20140705-goodbye-powerpoint/) · [PDF](https://pages.benelog.net/20140705-goodbye-powerpoint/slides.pdf) |
 | 2007-04-28 | 상혁과 나영의 결혼식 초대장 | 청첩장 | [`20070428-wedding/`](20070428-wedding/) | [HTML](https://pages.benelog.net/20070428-wedding/) |
@@ -28,6 +28,15 @@
   ```bash
   scripts/win-hwp2html.py            # ../old-com 을 읽어 19951114-windows-era/ 를 다시 만든다
   scripts/win-hwp2html.py <old-com 경로>
+  ```
+- `20261018-social-media-analysis/` 는 2026-10-15 에 올린 '페이스북 글로 본 정상혁'(`20261015-facebook-analysis/`)을
+  미투데이 분석과 합치고 2020~2026년 연도별 페이지를 더한 것이다.
+  페이스북 글은 '내 정보 내보내기'(게시물, 전체 기간, JSON)로 받았다. 내보내기에는 공개 범위가 없어서
+  프로필 게시물 필터(작성자: 나, 공개 범위: 전체 공개)가 돌려준 글의 작성 시각 목록과 대조해 전체 공개 글만 골랐고,
+  그 결과를 `originals/20261018-social-media-analysis/facebook-public-posts.jsonl` 에 두었다.
+
+  ```bash
+  scripts/fb-public-posts.py <내보내기 폴더> <공개 글 시각 목록> <출력 .jsonl>
   ```
 
 ## 구조 / 빌드
